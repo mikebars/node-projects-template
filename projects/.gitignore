@@ -1,0 +1,14 @@
+###########################################################################
+#                                                                         #
+# `node-projects` - Workspace - projects - `.gitignore`                   #
+#                                                                         #
+###########################################################################
+
+# All files
+*
+
+# Except: .gitignore
+!.gitignore
+
+# Except: .gitkeep
+!.gitkeep

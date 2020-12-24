@@ -1,0 +1,50 @@
+{
+  "name": "workspace",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mikebars/node-projects-template.git",
+  "author": "Mike Bars <mikebarsdev@gmail.com> (https://mikebars.github.io/)",
+  "license": "UNLICENSED",
+  "private": true,
+  "workspaces": [
+    "projects/*"
+  ],
+  "scripts": {
+    "|---------------------------------------------------------------------------|": "",
+    "|--Tools--------------------------------------------------------------------|": "",
+    "|--`lint`-------------------------------------------------------------------|": "",
+    "lint": "yarn lint:prettier .",
+    "lint:prettier": "prettier --list-different --loglevel error",
+    "lint:prettier:write": "yarn lint:prettier --write",
+    "|--Utilities----------------------------------------------------------------|": "",
+    "|--`clean`------------------------------------------------------------------|": "",
+    "clean": "yarn clean:node && yarn clean:npm && yarn clean:yarn",
+    "clean:node": "rm --force --recursive node_modules/",
+    "clean:npm": "rm --force npm-*.log npm-shrinkwrap.json package-lock.json && npm cache clear --force",
+    "clean:yarn": "rm --force yarn-*.har yarn-*.log yarn.lock && yarn cache clean",
+    "|--`node`-------------------------------------------------------------------|": "",
+    "node:inspect": "NODE_OPTIONS=\"--inspect=127.0.0.1:9229\" $($1)",
+    "node:max-old-space-size:1GB": "NODE_OPTIONS=\"--max-old-space-size=1024\" $($1)",
+    "node:max-old-space-size:2GB": "NODE_OPTIONS=\"--max-old-space-size=2048\" $($1)",
+    "node:max-old-space-size:3GB": "NODE_OPTIONS=\"--max-old-space-size=3072\" $($1)",
+    "node:max-old-space-size:4GB": "NODE_OPTIONS=\"--max-old-space-size=4096\" $($1)",
+    "node:max-old-space-size:8GB": "NODE_OPTIONS=\"--max-old-space-size=8192\" $($1)",
+    "node:max-old-space-size:16GB": "NODE_OPTIONS=\"--max-old-space-size=16384\" $($1)",
+    "node:max-old-space-size:32GB": "NODE_OPTIONS=\"--max-old-space-size=32768\" $($1)",
+    "node:max-old-space-size:64GB": "NODE_OPTIONS=\"--max-old-space-size=65536\" $($1)",
+    "node:max-old-space-size:128GB": "NODE_OPTIONS=\"--max-old-space-size=131072\" $($1)",
+    "node:max-old-space-size:256GB": "NODE_OPTIONS=\"--max-old-space-size=262144\" $($1)",
+    "node:max-old-space-size:512GB": "NODE_OPTIONS=\"--max-old-space-size=524288\" $($1)",
+    "node:max-old-space-size:1TB": "NODE_OPTIONS=\"--max-old-space-size=1048576\" $($1)",
+    "|--`reset`------------------------------------------------------------------|": "",
+    "reset": "yarn clean && yarn install",
+    "|--`silent`-----------------------------------------------------------------|": "",
+    "silent": "$($1) > /dev/null 2>&1",
+    "|___________________________________________________________________________|": ""
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "0.12.0",
+    "@types/prettier": "2.1.6",
+    "prettier": "2.2.1"
+  }
+}
