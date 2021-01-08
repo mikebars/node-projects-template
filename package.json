@@ -1,11 +1,11 @@
 {
   "name": "workspace",
   "version": "0.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/mikebars/node-projects-template.git",
-  "author": "Mike Bars <mikebarsdev@gmail.com> (https://mikebars.github.io/)",
+  "homepage": "https://github.com/mikebars/node-projects-template",
   "license": "UNLICENSED",
-  "private": true,
+  "author": "Mike Bars <mikebarsdev@gmail.com> (https://mikebars.github.io/)",
+  "main": "package.json",
+  "repository": "https://github.com/mikebars/node-projects-template.git",
   "scripts": {
     "|---------------------------------------------------------------------------|": "",
     "|--Tools--------------------------------------------------------------------|": "",
@@ -43,5 +43,6 @@
     "@prettier/plugin-xml": "0.12.0",
     "@types/prettier": "2.1.6",
     "prettier": "2.2.1"
-  }
+  },
+  "private": true
 }
