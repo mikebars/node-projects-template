@@ -1,7 +1,9 @@
 {
-  "name": "workspace",
+  "name": "node-projects",
   "version": "0.0.0",
+  "description": "🎷🦄 A basic template for housing node projects, complete with devcontainer!",
   "homepage": "https://github.com/mikebars/node-projects-template",
+  "bugs": "https://github.com/mikebars/node-projects-template/pulls",
   "license": "UNLICENSED",
   "author": "Mike Bars <mikebarsdev@gmail.com> (https://mikebars.github.io/)",
   "main": "package.json",
@@ -40,9 +42,14 @@
     "|___________________________________________________________________________|": ""
   },
   "devDependencies": {
-    "@prettier/plugin-xml": "0.12.0",
-    "@types/prettier": "2.1.6",
+    "@prettier/plugin-xml": "0.13.0",
+    "@types/prettier": "2.2.0",
     "prettier": "2.2.1"
+  },
+  "engines": {
+    "node": "*",
+    "npm": "*",
+    "yarn": "*"
   },
   "private": true
 }

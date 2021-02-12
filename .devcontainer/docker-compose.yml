@@ -1,7 +1,7 @@
 ###########################################################################
-#                                                                         #
-# `node-projects` - Container - `docker-compose.yml`                      #
-#                                                                         #
+# `node-projects`                                                         #
+# `Container`                                                             #
+# `docker-compose.yml`                                                    #
 ###########################################################################
 
 # Specify the compose format that this file conforms to.

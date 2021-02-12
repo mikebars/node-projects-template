@@ -1,8 +1,8 @@
 {
   /***************************************************************************/
-  /*                                                                         */
-  /* `node-projects` - Workspace - `settings.json`                           */
-  /*                                                                         */
+  /* `node-projects`                                                         */
+  /* `Workspace`                                                             */
+  /* `settings.json`                                                         */
   /***************************************************************************/
 
   /* `[<language>]` */
@@ -155,9 +155,10 @@
   "workbench.editor.focusRecentEditorAfterClose": false,
 
   /***************************************************************************/
-  /*                                                                         */
-  /* `node-projects` - Workspace - Extensions - `settings.json`              */
-  /*                                                                         */
+  /* `node-projects`                                                         */
+  /* `Workspace`                                                             */
+  /* `Extensions`                                                            */
+  /* `settings.json`                                                         */
   /***************************************************************************/
 
   /* `editor` */

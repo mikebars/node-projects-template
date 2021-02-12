@@ -1,8 +1,8 @@
 {
   /***************************************************************************/
-  /*                                                                         */
-  /* `node-projects` - Workspace - `.prettierrc.json5`                       */
-  /*                                                                         */
+  /* `node-projects`                                                         */
+  /* `Workspace`                                                             */
+  /* `.prettierrc.json5`                                                     */
   /***************************************************************************/
 
   // JSON schema for Prettier configuration files.

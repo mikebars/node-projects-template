@@ -1,8 +1,8 @@
 {
   /***************************************************************************/
-  /*                                                                         */
-  /* `node-projects` - Workspace - `extensions.json`                         */
-  /*                                                                         */
+  /* `node-projects`                                                         */
+  /* `Workspace`                                                             */
+  /* `extensions.json`                                                       */
   /***************************************************************************/
 
   // List of extensions which should be recommended for users of this workspace.
