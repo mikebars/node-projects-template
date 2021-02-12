@@ -16,7 +16,7 @@
     "|--Utilities----------------------------------------------------------------|": "",
     "|--`clean`------------------------------------------------------------------|": "",
     "clean": "yarn clean:node && yarn clean:npm && yarn clean:yarn",
-    "clean:node": "rm --force --recursive **/node_modules/.** **/node_modules/**",
+    "clean:node": "rm --force --recursive node_modules/ && mkdir node_modules",
     "clean:npm": "rm --force npm-*.log npm-shrinkwrap.json package-lock.json && npm cache clear --force",
     "clean:yarn": "rm --force yarn-*.har yarn-*.log yarn.lock && yarn cache clean",
     "|--`node`-------------------------------------------------------------------|": "",

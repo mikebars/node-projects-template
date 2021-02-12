@@ -16,16 +16,16 @@
   integrity "sha1-9LHvp4To20ec24sUQD4hRLHp/wM= sha512-6gOkRe7OIioWAXfnO/2lFiv+SJichKVSys1mSsgyrYHSEjk8Ctv4tSR/Odvnu+HWlH2C8j53dahU03XmQdd5fA=="
 
 "@xml-tools/parser@^1.0.2":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@xml-tools/parser/-/parser-1.0.7.tgz#2228b77856cd552392057b8e2e507101b64261cb"
-  integrity "sha1-Iii3eFbNVSOSBXuOLlBxAbZCYcs= sha512-mdjG4dWj4zaubxWAgr0YMNkZr182aHek5xrpDqgITNnGf+E8FhvAmCU95QiL9+pGjqK8Qfd+qnuer9f8KELRyQ=="
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@xml-tools/parser/-/parser-1.0.10.tgz#d1dd3a4323d713fcca5279005c96b37058ccbc33"
+  integrity "sha1-0d06QyPXE/zKUnkAXJazcFjMvDM= sha512-9oRb68wEKT+MRB7e2GwTiKicRKVXKzquBDGgH6YcGafvnSYXorWi2oaTVtbv2109RlGiQSnoXaQFUXCnHwFS7Q=="
   dependencies:
-    chevrotain "7.0.1"
+    chevrotain "7.1.1"
 
-chevrotain@7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/chevrotain/-/chevrotain-7.0.1.tgz#55d1d21a9afea0aad23b4d30e75650212eb4cc9f"
-  integrity "sha1-VdHSGpr+oKrSO00w51ZQIS60zJ8= sha512-B/44jrdw5GAzy483LEeVSgXSX0qOYM8lUd3l5+yf6Vl6OQjEUCm2BUiYbHRCIK6xCEvCLAFe1kj8uyV6+zdaVw=="
+chevrotain@7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/chevrotain/-/chevrotain-7.1.1.tgz#5122814eafd1585a9601f9180a7be9c42d5699c6"
+  integrity "sha1-USKBTq/RWFqWAfkYCnvpxC1WmcY= sha512-wy3mC1x4ye+O+QkEinVJkPf5u2vsrDIYW9G7ZuwFl6v/Yu0LwUuT2POsb+NUWApebyxfkQq6+yDfRExbnI5rcw=="
   dependencies:
     regexp-to-ast "0.5.0"
 
