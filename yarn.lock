@@ -2,18 +2,18 @@
 # yarn lockfile v1
 
 
-"@prettier/plugin-xml@0.13.0":
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/@prettier/plugin-xml/-/plugin-xml-0.13.0.tgz#0927ab554668de0a9c6c5d15c5f94a9346c79a01"
-  integrity sha512-kjC8ZoqrNdSGyUfGS0KGxmA2YxI/mpO2bQtOsg8663DISyfvkN/1LoR8nO+0BaAKkGWhP2rzgk6rqiSEQz8vQw==
+"@prettier/plugin-xml@0.13.1":
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/@prettier/plugin-xml/-/plugin-xml-0.13.1.tgz#fb1c265fb8256c509da187b5a530c3eb2bf80091"
+  integrity sha512-jJbjvFEsxOT2Jhv2yydOvJbnSREJy+OECwHyZaYr05jLXlJeBrzy5YY1fDYpwTfKk1B2YqNExXI+x3Zm5yGfeA==
   dependencies:
     "@xml-tools/parser" "^1.0.2"
     prettier ">=1.10"
 
-"@types/prettier@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.2.0.tgz#a4e8205a4955690eef712a6d0394a1d2e121e721"
-  integrity sha512-O3SQC6+6AySHwrspYn2UvC6tjo6jCTMMmylxZUFhE1CulVu5l3AxU6ca9lrJDTQDVllF62LIxVSx5fuYL6LiZg==
+"@types/prettier@2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.2.2.tgz#e2280c89ddcbeef340099d6968d8c86ba155fdf6"
+  integrity sha512-i99hy7Ki19EqVOl77WplDrvgNugHnsSjECVR/wUrzw2TJXz1zlUfT2ngGckR6xN7yFYaijsMAqPkOLx9HgUqHg==
 
 "@xml-tools/parser@^1.0.2":
   version "1.0.10"
