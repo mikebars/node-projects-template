@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@prettier/plugin-xml": "0.13.1",
-    "@types/prettier": "2.2.2",
+    "@types/prettier": "2.2.3",
     "prettier": "2.2.1"
   },
   "engines": {

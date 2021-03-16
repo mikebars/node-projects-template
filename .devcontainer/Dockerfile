@@ -33,14 +33,21 @@ ARG DEVCONTAINER_USER_NAME
 ARG DEVCONTAINER_USER_UID
 
 RUN \
-    # Set the UID and GID for the `node` user
+    # Set the UID and GID for the `DEVCONTAINER_USER_NAME` user
     groupmod --gid ${DEVCONTAINER_USER_GID} ${DEVCONTAINER_USER_NAME} \
     && usermod --gid ${DEVCONTAINER_USER_GID} --uid ${DEVCONTAINER_USER_UID} ${DEVCONTAINER_USER_NAME} \
     && chown --recursive ${DEVCONTAINER_USER_UID}:${DEVCONTAINER_USER_GID} /home/${DEVCONTAINER_USER_NAME} \
+    # Download git-lfs
+    && curl --silent https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash \
     # Install packages
     && apt-get update \
     && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get --assume-yes install --no-install-recommends ${DEVCONTAINER_PACKAGE_APT_PACKAGE_LIST} \
+    && apt-get --assume-yes install --no-install-recommends git-lfs sudo zsh ${DEVCONTAINER_PACKAGE_APT_PACKAGE_LIST} \
+    # Add sudo support for the `DEVCONTAINER_USER_NAME` user
+    && echo ${DEVCONTAINER_USER_NAME} ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/${DEVCONTAINER_USER_NAME} \
+    && chmod a+rwx,u-wx,g-wx,o-rwx,ug-s,-t /etc/sudoers.d/${DEVCONTAINER_USER_NAME} \
+    # Install git-lfs
+    && git lfs install \
     # Upgrade npm
     && npm install --force --global --unsafe-perm npm@latest
 
